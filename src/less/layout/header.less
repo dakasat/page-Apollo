@@ -1,0 +1,90 @@
+header{
+    background-color: #efefef;
+
+}
+// Выпадающее меню
+
+.menu {
+  background-color: #efefef;
+  color: transparent;
+  height: 4rem;
+  position: absolute;
+  right:15px;
+  top: 40px;
+  user-select: none;
+  width: 0rem;
+  z-index: 1;
+}
+
+// Стили активного меню
+.menu.active { 
+  width: 70%;
+  margin-right: 4rem;
+}
+.menu.active .menu-link {
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-inner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;  
+  padding: 0;
+}
+.menu-link {
+  color: transparent;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  margin: auto;
+}
+
+// Конец выпадающего меню
+.header__left{
+    display: block;
+    height: 750px;
+    width: 680px;
+    box-sizing: border-box;
+    background-image: url(../img/a.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+// Секция А
+.letter-a__info{
+    padding-left: 180px;
+    padding-top: 240px;
+}
+
+.section__text{
+    display: inline-block;
+    max-width: 460px;
+    width: 100%;
+    padding-top: 50px;
+}
+.header__foto{
+    display: block;
+    position: absolute;
+    bottom:0;
+    right: 90px;
+    width: 800px;
+    height: 750px;
+    box-sizing: border-box;
+    background-image: url(../img/photographer.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+
+}
